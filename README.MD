@@ -33,7 +33,7 @@ curl --location --request POST 'http://127.0.0.1:5000/sensor/add' \--header 'Con
 curl --location --request POST 'http://127.0.0.1:5000/reading/add' \--header 'Content-Type: application/json' \
 --data-raw '{"id": "id","read_sen_link": "IRE3", "temperature": "-69", "humidity": "69", "windspeed": "69", "timestamp": "timestamp"}'
 
-## Failing on response attributes
 # Get average attributes
+## Failing on response attributes
 curl --location --request GET 'http://127.0.0.1:5000/get_average' \--header 'Content-Type: application/json' \
 --data-raw '{   "read_sen_link": "IRE3", "attribute": "humidity", "start_day": "2022-02-04", "end_day": "2022-02-07", "average": ""}
