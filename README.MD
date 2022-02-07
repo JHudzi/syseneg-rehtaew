@@ -14,6 +14,8 @@ pip install -r requirements.txt
 
 flask run
 
+**Incase of Db error -> Py db_setup.py **
+
 ## ---------------------- Queries ------------------------
 # Get all sensors
 curl --location --request GET 'http://127.0.0.1:5000/sensor/all'\
