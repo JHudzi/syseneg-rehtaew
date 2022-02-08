@@ -7,16 +7,6 @@ class Sensor:
         self.country = country
         self.city = city
 
-    """@property
-    def sen_read_link(self):
-        return self.sen_read_link
-
-    @sen_read_link.setter
-    def sen_read_link(self, value):
-        if Sensor.sen_read_link(value):
-            raise ValueError("Sensor Exists Already")
-        self._sen_read_link = value"""
-
     def save(self):
         db_manager = DatabaseManager()
         query_string = "INSERT INTO Sensor (sen_read_link, country, city) values(?, ?, ?)"
